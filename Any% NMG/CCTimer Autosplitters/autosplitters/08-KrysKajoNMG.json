@@ -1,0 +1,119 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Collect Wave",
+				"type": "combined",
+				"conditions": [{
+					"type": "loadmap",
+					"name": "shock-dng.f2.room-element",
+					"once": true
+				}, {
+					"type": "eventtriggered",
+					"name": "menu.circuit.start.4",
+					"value": true,
+					"once": true
+				}]
+				
+			},
+			"once": true
+		},
+		{
+			"_comment": "Enter Krys'kajo",
+			"type": "loadmap",
+			"name": "tree-dng.g.center-01-entrance",
+			"once": true
+		},
+		{
+			"_comment": "Enter Son of the East",
+			"type": "loadmap",
+			"name": "tree-dng.f2.room-01",
+			"once": true
+		},
+		{
+			"_comment": "Kill Son of the East",
+			"type": "combined",
+			"conditions": [{
+				"type": "loadmap",
+				"name": "tree-dng.f2.room-01",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "tmp.apeDefeated",
+				"value": true,
+				"once": true
+				}]
+		},
+		{
+			"_comment": "Collect Box Clip Room Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "tree-dng.f3.west-01",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_81",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Right Room Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "tree-dng.f3.east-01",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_81",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Boss Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "tree-dng.f3.center-01",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_136",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Enter Krys'kajo Expo Space",
+			"type": "loadmap",
+			"name": "jungle.dng.tree-expo-space",
+			"once": true
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": ["LOADING"]
+	},
+	"splits": [{
+		"type": "start"
+	}, {
+       		"_comment": "Rhombus Dungeon",
+        	"type": "loadmap",
+        	"name": "rhombus-sqr.central-inner",
+        	"once": true
+	}, {
+		"_comment": "Sapphire Ridge",
+		"type": "loadmap",
+		"name": "forest.path-04-hostel",
+		"once": true
+	}, {
+		"_comment": "Vermillion",
+		"type": "loadmap",
+		"name": "arid.tower-1",
+		"once": true
+	}, {
+		"_comment": "Farming Time",
+		"type": "loadmap",
+		"name": "arid-dng.first.room-07",
+		"once": true
+	}]
+}

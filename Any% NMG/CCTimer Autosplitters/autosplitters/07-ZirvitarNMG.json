@@ -1,0 +1,106 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Collect Shock",
+				"type": "combined",
+				"conditions": [{
+					"type": "loadmap",
+					"name": "wave-dng.b1.center-05-element",
+					"once": true
+				}, {
+					"type": "eventtriggered",
+					"name": "menu.circuit.start.3",
+					"value": true,
+					"once": true
+				}]
+				
+			},
+			"once": true
+		},
+		{
+			"_comment": "Collect Tengu Mask",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "forest.path-05",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_9",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Sonic Spike",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "forest.path-07",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_44",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Warkeeper",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "forest.path-10",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_904",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Enter Zir'vitar",
+			"type": "loadmap",
+			"name": "shock-dng.g.room1",
+			"once": true
+		},
+		{
+			"_comment": "Start of Zir'vitar Gauntlet",
+			"type": "loadmap",
+			"name": "shock-dng.f2.room3to5",
+			"once": true
+		},
+		{
+			"_comment": "Collect Wave",
+			"type": "eventtriggered",
+			"name": "menu.circuit.start.4",
+			"value": true,
+			"once": true
+		}
+	]
+}

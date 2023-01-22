@@ -1,0 +1,138 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Enter Bergen Mine",
+				"type": "loadmap",
+				"name": "cold-dng.g.center"
+			},
+			"once": true
+		},
+		{
+			"_comment": "Ground Floor Right Side Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "cold-dng.g.room2",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_3",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Central Room B1",
+			"type": "loadmap",
+			"name": "cold-dng.b1.center",
+			"once": true
+		},
+		{
+			"_comment": "B1 Ant Room Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "cold-dng.b1.room4",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_3",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "B1 Bomb Puzzle",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "cold-dng.b1.room6",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.keyCollected",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Central Room B2",
+			"type": "loadmap",
+			"name": "cold-dng.b2.center",
+			"once": true
+		},
+		{
+			"_comment": "Central Room B3",
+			"type": "loadmap",
+			"name": "cold-dng.b3.center",
+			"once": true
+		},
+		{
+			"_comment": "B3 Ant Room Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "cold-dng.b3.room6",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_36",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "B3 Kamikatze Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "cold-dng.b3.room3",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_11",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Acquire Heat",
+			"type": "eventtriggered",
+			"name": "menu.circuit.start.1",
+			"value": true,
+			"once": true
+		},
+		{
+			"_comment": "Cross Central",
+			"type": "loadmap",
+			"name": "rhombus-sqr.central-inner",
+			"once": true
+		}
+	]
+}

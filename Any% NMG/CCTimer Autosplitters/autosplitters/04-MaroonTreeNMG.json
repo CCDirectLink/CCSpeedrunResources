@@ -1,0 +1,110 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Acquire Heat",
+				"type": "combined",
+				"conditions": [{
+					"type": "loadmap",
+					"name": "cold-dng.b3.room7",
+					"once": true
+				}, {
+					"type": "eventtriggered",
+					"name": "menu.circuit.start.1",
+					"value": true,
+					"once": true
+				}]
+				
+			},
+			"once": true
+		},
+		{
+			"_comment": "Enter Ba'kii Kum",
+			"type": "loadmap",
+			"name": "heat-village.baki-2",
+			"once": true
+		},
+		{
+			"_comment": "Enter Maroon Valley",
+			"type": "loadmap",
+			"name": "heat.path-11",
+			"once": true
+		},
+		{
+			"_comment": "Collect Thief's Band",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat.path-02",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_7",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Hidden Blade",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat.oasis.oasis-path-03",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_34",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Enter Maroon Tree",
+			"type": "loadmap",
+			"name": "heat.caves.maroon-cave-01",
+			"once": true
+		},
+		{
+			"_comment": "Defeat Several Tims",
+			"type": "loadmap",
+			"name": "heat.caves.maroon-cave-03",
+			"once": true
+		},
+		{
+			"_comment": "Kill Red Tim",
+			"type": "combined",
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat.caves.maroon-cave-03",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "tmp.bossDefeated",
+				"value": true,
+				"once": true
+			}]
+		}
+	]
+}

@@ -1,0 +1,146 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": ["LOADING"]
+	},
+	"splits": [{
+		"type": "start"
+	}, {
+		"_comment": "exit M.S. Solar",
+		"type": "loadmap",
+		"name": "rhombus-sqr.dng-top",
+		"once": true
+	}, {
+        "_comment": "enter CrossCentral",
+        "type": "loadmap",
+        "name": "forest.path-04-hostel",
+        "once": true
+	}, {
+        "_comment": "enter Bergen Mine",
+        "type": "loadmap",
+        "name": "cold-dng.g.center",
+        "once": true
+    }, {
+		"_comment": "acquire Heat",
+		"type": "eventtriggered",
+		"name": "menu.circuit.start.1",
+		"value": true,
+		"once": true
+	}, {
+        "_comment": "enter Maroon Tree",
+        "type": "loadmap",
+        "name": "heat.caves.maroon-cave-01",
+        "once": true
+    }, {
+		"_comment": "kill Red Tim",
+		"type": "combined",
+		"conditions": [{
+			"type": "loadmap",
+			"name": "heat.caves.maroon-cave-03",
+			"once": true
+		}, {
+			"type": "eventtriggered",
+			"name": "tmp.bossDefeated",
+			"value": true,
+			"once": true
+		}]
+	}, {
+		"_comment": "acquire Cold",
+		"type": "eventtriggered",
+		"name": "menu.circuit.start.2",
+		"value": true,
+		"once": true
+	}, {
+		"_comment": "kill Master Magmoth",
+		"type": "damage",
+		"name": "heat.megamoth",
+		"below": 0
+	}, {
+        "_comment": "enter So'Najiz",
+        "type": "loadmap",
+        "name": "wave-dng.g.room-entrance",
+        "once": true
+    }, {
+		"_comment": "acquire Shock/Wave",
+		"type": "eventtriggered",
+		"name": "menu.circuit.start.3",
+		"value": true,
+		"once": true
+	}, {
+        "_comment": "enter Zir'Vitar",
+        "type": "loadmap",
+        "name": "shock-dng.g.room1",
+        "once": true
+    }, {
+		"_comment": "acquire Wave/Shock",
+		"type": "eventtriggered",
+		"name": "menu.circuit.start.4",
+		"value": true,
+		"once": true
+	}, {
+		"_comment": "kill Son of the East",
+		"type": "combined",
+		"conditions": [{
+			"type": "loadmap",
+			"name": "tree-dng.f2.room-01",
+			"once": true
+		}, {
+			"type": "eventtriggered",
+			"name": "tmp.apeDefeated",
+			"value": true,
+			"once": true
+			}]
+	}, {
+		"_comment": "enter Krys'kajo Expo Space",
+		"type": "loadmap",
+		"name": "jungle.dng.tree-expo-space",
+		"once": true
+	}, {
+        "_comment": "enter Vermillion Tower",
+        "type": "loadmap",
+        "name": "arid-dng.second.f0.entrance",
+        "once": true
+    }, {
+		"_comment": "kill Quad Turrets",
+		"type": "loadmap",
+		"name": "arid-dng.second.f4.center",
+		"once": true
+	}, {
+        "_comment": "enter floor 99",
+        "type": "loadmap",
+        "name": "arid-dng.second.f99.center",
+        "once": true
+    }, {
+        "_comment": "enter Creator",
+        "type": "loadmap",
+        "name": "arid-dng.second.f99.boss-2",
+        "once": true
+    }, {
+		"_comment": "The Creator Dies",
+		"type": "combined",
+		"once": true,
+		"conditions": [{
+			"type": "loadmap",
+			"name": "arid-dng.second.f99.boss-2",
+			"once": true
+		}, {
+			"type": "damage",
+			"name": "boss.elephant",
+			"below": 0,
+			"once": true
+		}]
+	}]
+}

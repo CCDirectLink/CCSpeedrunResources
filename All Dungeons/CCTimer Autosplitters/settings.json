@@ -1,0 +1,136 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": ["LOADING"]
+	},
+	"splits": [{
+		"type": "start"
+	}, {
+		"_comment": "Solar",
+		"type": "loadmap",
+		"name": "rhombus-sqr.dng-top",
+		"once": true
+	}, {
+       		"_comment": "Rhombus Dungeon End",
+        	"type": "loadmap",
+        	"name": "rhombus-dng.room-final",
+        	"once": true
+	}, {
+		"_comment": "Apollo Skip",
+		"type": "loadmap",
+		"name": "dreams.first",
+		"once": true
+	}, {
+		"_comment": "entering Bergen Mine",
+		"type": "loadmap",
+		"name": "cold-dng.g.center",
+		"once": true
+	}, {
+		"_comment": "Ice Shade",
+		"type": "eventtriggered",
+		"name": "plot.line",
+		"value": 4120,
+		"once": true
+	}, {
+		"_comment": "Faj'ro Dream",
+		"type": "loadmap",
+		"name": "dreams.third",
+		"once": true
+	}, {
+		"_comment": "Sand Shade",
+		"type": "eventtriggered",
+		"name": "plot.line",
+		"value": 5000,
+		"once": true
+	}, {
+		"_comment": "Apollo and Pinzo Skip",
+		"type": "loadmap",
+		"name": "heat-dng.f2.room-cold",
+		"once": true
+	}, {
+		"_comment": "Flame Shade",
+		"type": "eventtriggered",
+		"name": "plot.line",
+		"value": 6700,
+		"once": true
+	}, {
+		"_comment": "Basin Keep",
+		"type": "loadmap",
+		"name": "jungle-city.center",
+		"once": true
+	}, {
+		"_comment": "Rite of Passage",
+		"type": "loadmap",
+		"name": "jungle.dng.tree-exterior",
+		"once": true
+	}, {
+		"_comment": "Element Room",
+		"type": "loadmap",
+		"name": "wave-dng.b1.center-05-element",
+		"once": true
+	}, {
+		"_comment": "Azure Drop Shade",
+		"type": "eventtriggered",
+		"name": "plot.waveLine",
+		"value": 700,
+		"once": true
+	}, {
+		"_comment": "Bolt Shade",
+		"type": "eventtriggered",
+		"name": "plot.shockLine",
+		"value": 700,
+		"once": true
+	}, {
+		"_comment": "Son of the East",
+		"type": "combined",
+		"conditions": [{
+			"type": "loadmap",
+			"name": "tree-dng.f2.room-01",
+			"once": true
+		}, {
+			"type": "eventtriggered",
+			"name": "tmp.apeDefeated",
+			"value": true,
+			"once": true
+			}]
+	}, {
+		"_comment": "Star Shade",
+		"type": "eventtriggered",
+		"name": "plot.line",
+		"value": 18650,
+		"once": true
+	}, {
+		"_comment": "Vermillion Tower Entrance",
+		"type": "loadmap",
+		"name": "arid-dng.second.f0.entrance",
+		"once": true
+	}, {
+		"_comment": "Quad Turrets",
+		"type": "loadmap",
+		"name": "arid-dng.second.f4.center",
+		"once": true
+	}, {
+		"_comment": "Designer",
+		"type": "loadmap",
+		"name": "arid-dng.second.f99.boss-2",
+		"once": true
+	}, {
+
+		"type": "damage",
+		"name": "boss.elephant",
+		"below": 0
+	}]
+}

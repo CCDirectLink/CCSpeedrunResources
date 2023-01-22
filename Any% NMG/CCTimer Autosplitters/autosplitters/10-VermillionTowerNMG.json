@@ -1,0 +1,75 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Enter Vermillion Tower",
+        		"type": "loadmap",
+        		"name": "arid-dng.second.f0.entrance"
+			},
+			"once": true
+		},
+		{
+			"_comment": "Finish Ground Floor",
+			"type": "loadmap",
+			"name": "arid-dng.second.f1.center",
+			"once": true
+		},
+		{
+			"_comment": "Finish Floor 1",
+			"type": "loadmap",
+			"name": "arid-dng.second.f2.center",
+			"once": true
+		},
+		{
+			"_comment": "Finish Floor 2",
+			"type": "loadmap",
+			"name": "arid-dng.second.f3.center",
+			"once": true
+		},
+		{
+			"_comment": "Finish Floor 3 (Quad Turrets)",
+			"type": "loadmap",
+			"name": "arid-dng.second.f4.center",
+			"once": true
+		},
+		{
+			"_comment": "Enter Floor 99",
+			"type": "loadmap",
+			"name": "arid-dng.second.f99.center",
+			"once": true
+		}, 
+		{
+			"_comment": "Enter Creator",
+			"type": "loadmap",
+			"name": "arid-dng.second.f99.boss-2",
+			"once": true
+		}, 
+		{
+			"_comment": "The Creator Dies",
+			"type": "damage",
+			"name": "boss.elephant",
+			"below": 0,
+			"once": true
+		}
+	]
+}

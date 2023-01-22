@@ -1,0 +1,190 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": ["LOADING"]
+	},
+	"splits": [{
+		"type": "start"
+	}, {
+		"_comment": "Solar",
+		"type": "loadmap",
+		"name": "rhombus-sqr.dng-top",
+		"once": true
+	}, {
+       		"_comment": "CrossCentral",
+        	"type": "loadmap",
+        	"name": "rookie-harbor.teleporter",
+        	"once": true
+	}, {
+		"_comment": "Apollo",
+		"type": "loadmap",
+		"name": "dreams.first",
+		"once": true
+	}, {
+		"_comment": "Heat",
+		"type": "eventtriggered",
+		"name": "menu.circuit.start.1",
+		"value": true,
+		"once": true
+	}, {
+		"_comment": "X01 Driller HFS",
+		"type": "damage",
+		"name": "boss-driller",
+		"below": 0
+	}, {
+		"_comment": "Maroon Tree",
+		"type": "combined",
+		"conditions": [{
+			"type": "loadmap",
+			"name": "heat.caves.maroon-cave-03",
+			"once": true
+		}, {
+			"type": "eventtriggered",
+			"name": "tmp.bossDefeated",
+			"value": true,
+			"once": true
+		}]
+	}, {
+		"_comment": "Cold",
+		"type": "eventtriggered",
+		"name": "menu.circuit.start.2",
+		"value": true,
+		"once": true
+	}, {
+		"_comment": "Master Magmoth",
+		"type": "damage",
+		"name": "heat.megamoth",
+		"below": 0
+	}, {
+		"_comment": "Seed Shade",
+		"type": "combined",
+		"conditions": [{
+			"type": "loadmap",
+			"name": "autumn-fall.path-04",
+			"once": true
+		}, {
+			"type": "eventtriggered",
+			"name": "tmp._questRewardsFinished",
+			"value": true,
+			"once": true
+		}]
+	}, {
+		"_comment": "Para Island",
+		"type": "loadmap",
+		"name": "autumn-fall.raid.raid-05",
+		"once": true
+	}, {
+		"_comment": "Dice Fight",
+		"type": "loadmap",
+        "name": "arid.interior.lobby",
+        "once": true
+	}, {
+		"_comment": "Rhino Fight",
+		"type": "loadmap",
+        "name": "arid.interior.flat",
+        "once": true
+	}, {
+		"_comment": "Gastropolis",
+		"type": "damage",
+		"name": "arid.snail",
+		"below": 0
+	}, {
+		"_comment": "Killed The Stick",
+		"type": "combined",
+		"conditions": [{
+			"type": "loadmap",
+			"name": "jungle.clearing.interior.chiefs-house-02",
+			"once": true
+		}, {
+			"type": "eventtriggered",
+			"name": "map.barrierUp",
+			"value": false,
+			"once": true
+		}]
+	}, {
+		"_comment": "Shock/Wave",
+		"type": "eventtriggered",
+		"name": "menu.circuit.start.4",
+		"value": true,
+		"once": true
+	}, {
+		"_comment": "Plasma Phantom",
+		"type": "damage",
+		"name": "jungle.shockboss",
+		"below": 0
+	}, {
+		"_comment": "Shock/Wave",
+		"type": "eventtriggered",
+		"name": "menu.circuit.start.3",
+		"value": true,
+		"once": true
+	}, {
+		"_comment": "Sir Blobus Starnikus",
+		"type": "damage",
+		"name": "jungle.waveboss",
+		"below": 0
+	}, {
+		"_comment": "Sephisloth",
+		"type": "damage",
+		"name": "minibosses.sloth-black",
+		"below": 0
+	}, {
+		"_comment": "Son of the East",
+		"type": "combined",
+		"conditions": [{
+			"type": "loadmap",
+			"name": "tree-dng.f2.room-01",
+			"once": true
+		}, {
+			"type": "eventtriggered",
+			"name": "tmp.apeDefeated",
+			"value": true,
+			"once": true
+			}]
+	}, {
+		"_comment": "Ancient Guardian",
+		"type": "damage",
+		"name": "jungle.whale-boss",
+		"below": 0
+	}, {
+		"_comment": "Meteor Shade",
+		"type": "loadmap",
+		"name": "forest.interior.statue-room",
+		"once": true
+	}, {
+		"_comment": "Shizuka",
+		"type": "combined",
+		"once" : true,
+		"conditions": [{
+			"type": "loadmap",
+			"name": "hideout.inner-office"
+		}, {
+			"type": "eventtriggered",
+			"name": "tmp.shizukaThere",
+			"value": true
+			}]
+	}, {
+		"_comment": "Quad Turrets",
+		"type": "loadmap",
+		"name": "arid-dng.second.f4.center",
+		"once": true
+	}, {
+
+		"type": "damage",
+		"name": "boss.elephant",
+		"below": 0
+	}]
+}

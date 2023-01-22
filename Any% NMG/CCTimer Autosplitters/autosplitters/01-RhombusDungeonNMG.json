@@ -1,0 +1,57 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Exit M.S. Solar",
+				"type": "loadmap",
+				"name": "rhombus-sqr.dng-top"
+			},
+			"once": true
+		},
+		{
+			"_comment": "Rookie Jump",
+			"type": "loadmap",
+			"name": "rhombus-dng.room-3-1-post",
+			"once": true
+		},
+		{
+			"_comment": "Turret Room",
+			"type": "loadmap",
+			"name": "rhombus-dng.boss",
+			"once": true
+		},
+		{
+			"_comment": "Acquire Neutral Circuit",
+			"type": "eventtriggered",
+			"name": "menu.circuit.start.0",
+			"value": true,
+			"once": true
+		},
+		{
+			"_comment": "Tutorial Skip Sapphire Ridge",
+			"type": "loadmap",
+			"name": "forest.path-04-hostel",
+			"once": true
+		}
+	]
+}

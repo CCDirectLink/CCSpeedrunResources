@@ -1,0 +1,88 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Kill Master Magmoth",
+				"type": "damage",
+				"name": "heat.megamoth",
+				"below": 0
+			},
+			"once": true
+		},
+		{
+			"_comment": "Basin Keep",
+			"type": "loadmap",
+			"name": "jungle-city.center",
+			"once": true
+		},
+		{
+			"_comment": "Collect Aehre",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "jungle.path-04-end",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_6",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Moon Jump",
+			"type": "loadmap",
+			"name": "jungle.dng.tree-exterior",
+			"once": true
+		},
+		{
+			"_comment": "Enter So'najiz",
+			"type": "loadmap",
+			"name": "wave-dng.g.room-entrance",
+			"once": true
+		},
+		{
+			"_comment": "Collect So'najiz Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "wave-dng.b1.center-04-long",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_329",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Shock",
+			"type": "eventtriggered",
+			"name": "menu.circuit.start.3",
+			"value": true,
+			"once": true
+		}
+	]
+}

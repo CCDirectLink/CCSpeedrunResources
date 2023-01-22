@@ -1,0 +1,68 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Tutorial Skip Sapphire Ridge",
+				"type": "loadmap",
+				"name": "forest.path-04-hostel"
+			},
+			"once": true
+		},
+		{
+			"_comment": "Enter Bergen Trail",
+			"type": "loadmap",
+			"name": "bergen-trail.path-1-entrance",
+			"once": true
+		},
+		{
+			"_comment": "Past Hermit's House",
+			"type": "loadmap",
+			"name": "bergen-trail.path-6",
+			"once": true
+		},
+		{
+			"_comment": "Enter Bergen Village",
+			"type": "loadmap",
+			"name": "bergen.bergen",
+			"once": true
+		},
+		{
+			"_comment": "Enter Autumn's Rise",
+			"type": "loadmap",
+			"name": "autumn.path-8",
+			"once": true
+		},
+		{
+			"_comment": "Enter Guild Area",
+			"type": "loadmap",
+			"name": "autumn.guild.entrance",
+			"once": true
+		},
+		{
+			"_comment": "Enter Bergen Mine",
+			"type": "loadmap",
+			"name": "cold-dng.g.center",
+			"once": true
+		}
+	]
+}

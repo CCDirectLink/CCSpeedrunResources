@@ -1,0 +1,72 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Enter Krys'kajo Expo Space",
+				"type": "loadmap",
+				"name": "jungle.dng.tree-expo-space",
+				"once": true
+			},
+			"once": true
+		},
+		{
+			"_comment": "Collect Golden Tickets",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "forest.path-12",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_302",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Enter Hideout (Past Shizuka)",
+			"type": "loadmap",
+			"name": "hideout.inner-1",
+			"once": true
+		},
+		{
+			"_comment": "Enter Rhombus Square",
+			"type": "loadmap",
+			"name": "rhombus-sqr.shops-1",
+			"once": true
+		},
+		{
+			"_comment": "Enter Vermillion Wasteland Raid Cave",
+			"type": "loadmap",
+			"name": "forest.caves.exit-cave-01",
+			"once": true
+		},
+		{
+			"_comment": "Enter Vermillion Tower",
+			"type": "loadmap",
+			"name": "arid-dng.second.f0.entrance",
+			"once": true
+		}
+	]
+}

@@ -1,0 +1,186 @@
+{
+	"time": "state",
+	"filter": {
+		"include": [
+			"RUNNING",
+			"TELEPORT",
+			"NEWGAME",
+			"RESET",
+			"LOADGAME",
+			"MENU",
+			"PAUSE",
+			"LEVELUP",
+			"QUICK",
+			"ONMAPMENU",
+			"QUESTSOLVED"
+		],
+		"exclude": [
+			"LOADING"
+		]
+	},
+	"splits": [
+		{
+			"type": "start",
+			"on": {
+				"_comment": "Kill Red Tim",
+				"type": "combined",
+				"conditions": [{
+					"type": "loadmap",
+					"name": "heat.caves.maroon-cave-03",
+					"once": true
+				}, {
+					"type": "eventtriggered",
+					"name": "tmp.bossDefeated",
+					"value": true,
+					"once": true
+				}]
+			},
+			"once": true
+		},
+		{
+			"_comment": "Faj'ro Temple Exterior",
+			"type": "loadmap",
+			"name": "heat.dng-exterior",
+			"once": true
+		},
+		{
+			"_comment": "Enter Faj'ro Temple",
+			"type": "loadmap",
+			"name": "heat-dng.g.room-01",
+			"once": true
+		},
+		{
+			"_comment": "Collect Faj'ro Lower Temple Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat-dng.g.room-03",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_71",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Acquire Cold",
+			"type": "eventtriggered",
+			"name": "menu.circuit.start.2",
+			"value": true,
+			"once": true
+		},
+		{
+			"_comment": "Collect Trijelly Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat-dng.f4.room-03",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_21",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Puzzle Room Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat-dng.f4.room-05",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_56",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect White Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat-dng.f3.room-05",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_69",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Dash Puzzle Room Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat-dng.f4.room-09",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_92",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Magmanizer Fight Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat-dng.f3.room-07",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_19",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Pincer Fight Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat-dng.f4.room-11",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_27",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Collect Faj'ro Master Key",
+			"type": "combined",
+			"once": true,
+			"conditions": [{
+				"type": "loadmap",
+				"name": "heat-dng.f4.room-12",
+				"once": true
+			}, {
+				"type": "eventtriggered",
+				"name": "map.chest_85",
+				"value": true,
+				"once": true
+			}]
+		},
+		{
+			"_comment": "Kill Master Magmoth",
+			"type": "damage",
+			"name": "heat.megamoth",
+			"below": 0
+		}
+	]
+}
