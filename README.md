@@ -1,5 +1,5 @@
 # CrossCode Speedrunning Resources
-A community-managed repository for resources for speedrunning CrossCode!
+A community-managed repository of resources for speedrunning CrossCode!
 
 This repository contains a growing collection of save presets, blank splits for LiveSplit, and autosplitters for CrossCode speedrunning categories.
 
@@ -54,11 +54,11 @@ Check **Any% NMG** for a complete example using this form of styling.
 - settings.json (Primary autosplitter for running the full category)
 
 **autosplitters**:
-- ##-<Segment-Name>.json (Set of segment autosplitters for running the category)
+- ##-\<Segment-Name\>.json (Set of segment autosplitters for running the category)
 
 **LiveSplit Blank Splits**:
 - CrossCode - \<Category Name\>.lss (Blank Splits for full category)
-- CrossCode Segments \<Category Name\> - ## <Segment Name>.lss (Set of segment blank splits)
+- CrossCode Segments \<Category Name\> - ## \<Segment Name\>.lss (Set of segment blank splits)
 
 **Save Presets**:
 - \<Save Preset Folder Name\> (Folder)
