@@ -127,12 +127,6 @@
 			"name": "menu.circuit.start.1",
 			"value": true,
 			"once": true
-		},
-		{
-			"_comment": "Cross Central",
-			"type": "loadmap",
-			"name": "rhombus-sqr.central-inner",
-			"once": true
 		}
 	]
 }

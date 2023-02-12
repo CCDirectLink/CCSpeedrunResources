@@ -63,6 +63,15 @@
       <SegmentHistory />
     </Segment>
     <Segment>
+      <Name>-Enter Designer</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
       <Name>{Designer} Designer</Name>
       <Icon />
       <SplitTimes>

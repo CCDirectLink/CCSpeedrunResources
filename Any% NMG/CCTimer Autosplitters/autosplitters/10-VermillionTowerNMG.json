@@ -57,6 +57,12 @@
 			"type": "loadmap",
 			"name": "arid-dng.second.f99.center",
 			"once": true
+		},
+		{
+			"_comment": "Enter Designer",
+			"type": "loadmap",
+			"name": "arid-dng.second.f99.boss-1",
+			"once": true
 		}, 
 		{
 			"_comment": "Enter Creator",
