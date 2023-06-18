@@ -116,6 +116,24 @@
       <BestSegmentTime />
       <SegmentHistory />
     </Segment>
+	<Segment>
+      <Name>Son of the East</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Star Shade</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
     <Segment>
       <Name>So'najiz Gauntlet</Name>
       <Icon />
@@ -136,24 +154,6 @@
     </Segment>
     <Segment>
       <Name>Bolt Shade</Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best" />
-      </SplitTimes>
-      <BestSegmentTime />
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>Son of the East</Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best" />
-      </SplitTimes>
-      <BestSegmentTime />
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>Star Shade</Name>
       <Icon />
       <SplitTimes>
         <SplitTime name="Personal Best" />
