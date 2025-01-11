@@ -1,57 +1,65 @@
 {
-	"time": "state",
-	"filter": {
-		"include": [
-			"RUNNING",
-			"TELEPORT",
-			"NEWGAME",
-			"RESET",
-			"LOADGAME",
-			"MENU",
-			"PAUSE",
-			"LEVELUP",
-			"QUICK",
-			"ONMAPMENU",
-			"QUESTSOLVED"
-		],
-		"exclude": ["LOADING"]
-	},
-	"splits": [{
-		"type": "start"
-	}, {
-		"_comment": "Solar",
-		"type": "loadmap",
-		"name": "rhombus-sqr.dng-top",
-		"once": true
-
-	}, {
-        	"_comment": "Rhombus Dungeon",
-       		"type": "loadmap",
-        	"name": "rhombus-sqr.central-inner",
-        	"once": true
-
-	}, {
-        	"_comment": "Save Fix",
-       		"type": "loadmap",
-        	"name": "bergen-trail.excluded-1",
-        	"once": true
-
-	}, {
-		"_comment": "Quad Turrets",
-		"type": "loadmap",
-		"name": "arid-dng.second.f4.center",
-		"once": true
-	
-	}, {
-		"_comment": "Designer",
-		"type": "loadmap",
-		"name": "arid-dng.second.f99.boss-2",
-		"once": true
-	
-	}, {
-		"_comment": "Creator",
-		"type": "damage",
-		"name": "boss.elephant",
-		"below": 0
-	}]
+  "time": "state",
+  "filter": {
+    "include": [
+      "RUNNING",
+      "TELEPORT",
+      "NEWGAME",
+      "RESET",
+      "LOADGAME",
+      "MENU",
+      "PAUSE",
+      "LEVELUP",
+      "QUICK",
+      "ONMAPMENU",
+      "QUESTSOLVED"
+    ],
+    "exclude": ["LOADING"]
+  },
+  "splits": [
+    {
+      "type": "start"
+    },
+    {
+      "_comment": "Solar",
+      "type": "loadmap",
+      "name": "rhombus-sqr.dng-top",
+      "once": true
+    },
+    {
+      "_comment": "Rhombus Dungeon",
+      "type": "loadmap",
+      "name": "rhombus-sqr.central-inner",
+      "once": true
+    },
+    {
+      "_comment": "Save Fix",
+      "type": "loadmap",
+      "name": "bergen-trail.excluded-1",
+      "once": true
+    },
+    {
+      "_comment": "Vermillion Tower Entrance",
+      "type": "loadmap",
+      "name": "arid-dng.second.f0.entrance",
+      "once": true
+    },
+    {
+      "_comment": "Quad Turrets",
+      "type": "loadmap",
+      "name": "arid-dng.second.f4.center",
+      "once": true
+    },
+    {
+      "_comment": "Designer",
+      "type": "loadmap",
+      "name": "arid-dng.second.f99.boss-2",
+      "once": true
+    },
+    {
+      "type": "damage",
+      "name": "boss.elephant",
+      "below": 0
+    }
+  ]
 }

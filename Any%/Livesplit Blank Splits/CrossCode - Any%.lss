@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Run version="1.7.0">
   <GameIcon />
   <GameName>CrossCode</GameName>
   <CategoryName>Any%</CategoryName>
+  <LayoutPath>
+  </LayoutPath>
   <Metadata>
     <Run id="" />
     <Platform usesEmulator="False">
@@ -19,66 +21,63 @@
       <Name>M.S. Solar</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
       <Name>Rhombus Dungeon</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
       <Name>Save Fix</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Vermillion Tower</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
       <Name>Quad Turrets</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
       <Name>The Designer</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
       <Name>Ultimate Experience</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
   </Segments>
