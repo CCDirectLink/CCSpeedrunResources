@@ -27,6 +27,10 @@ These are blank split files for [LiveSplit](https://livesplit.org/), a widely us
 
 These are autosplitter files for use with [CCTimer](https://github.com/CCDirectLink/CCTimer). Each (completed) category folder includes a `settings.json` file for doing full runs of the category and an `autosplitters` folder, which contains additional splitters for each of the segments in the run. These folders are organized so they can be easily copied directly into the `timer` folder of CCTimer.
 
+## NG+ Saves
+
+These text files are save strings for saves associated with the relevant category. To use them, press F10 in-game, select and copy everything in the text file (you can use `CTRL + A` to select all), then paste it into **Import Save Slot** and click **Submit**. If the import is successful, you should see the save file in the saves menu.
+
 ## Contributing
 
 Contributions are absolutely welcomed!
@@ -47,9 +51,10 @@ Check **Any% NMG** for a complete example using this form of styling.
 **\<Category Name\>**:
 - CCTimer Autosplitters (Folder)
 - LiveSplit Blank Splits (Folder)
+- NG+ Saves (Folder)
 - Save Presets (Folder)
 
-**Timer Autosplitters**:
+**CCTimer Autosplitters**:
 - autosplitters (Folder)
 - settings.json (Primary autosplitter for running the full category)
 
@@ -59,6 +64,9 @@ Check **Any% NMG** for a complete example using this form of styling.
 **LiveSplit Blank Splits**:
 - CrossCode - \<Category Name\>.lss (Blank Splits for full category)
 - CrossCode Segments \<Category Name\> - ## \<Segment Name\>.lss (Set of segment blank splits)
+
+**NG+ Saves**:
+- Save.txt (A starting save for the category)
 
 **Save Presets**:
 - \<Save Preset Folder Name\> (Folder)

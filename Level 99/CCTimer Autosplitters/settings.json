@@ -38,5 +38,10 @@
 		"type": "loadmap",
 		"name": "arid-dng.first.room-07",
 		"once": true
+	}, {
+		"_comment": "Level 99",
+		"type": "level",
+		"equal": 99,
+		"once": true
 	}]
 }
